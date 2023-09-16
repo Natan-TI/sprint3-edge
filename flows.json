@@ -1,0 +1,50 @@
+[
+    {
+        "id": "3669054f4ac0871c",
+        "type": "ui_gauge",
+        "z": "d086d30e577baa23",
+        "name": "",
+        "group": "edf41cc55cdcca2e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Gráfico de Lotação ",
+        "label": " Pessoas",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 970,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "edf41cc55cdcca2e",
+        "type": "ui_group",
+        "name": "Lotação de ônibus",
+        "tab": "a4f051166d0a539e",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a4f051166d0a539e",
+        "type": "ui_tab",
+        "name": "Sprint 3 - Contador de pessoas",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    }
+]
