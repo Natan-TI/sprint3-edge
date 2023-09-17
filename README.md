@@ -1,12 +1,13 @@
 <h1 align="center">UrbanFlow - Sprint 3 Edge</h1>
-<img src="./images/nodered.png" width="450px;" alt="Foto do Projeto Arduino"/><br>
-<img src="./images/dashboard.png" width="450px;" alt="Foto do Projeto Arduino"/><br>
-<img src="./images/simulide.png" width="450px;" alt="Foto do Projeto Arduino"/><br>
-<img src="./images/com0com.png" width="450px;" alt="Foto do Projeto Arduino"/><br>
+<img src="./images/nodered.png" width="900px;" alt="Foto do Projeto Arduino"/><br>
+<img src="./images/dashboard.png" width="900px;" alt="Foto do Projeto Arduino"/><br>
+<img src="./images/simulide.png" width="900px;" alt="Foto do Projeto Arduino"/><br>
+<img src="./images/com0com.png" width="900px;" alt="Foto do Projeto Arduino"/><br>
   
 ## :link: Links
   <br>
 * Youtbe: https://youtu.be/vmT0nWzwzgU
+
 
 
 ## :memo: Descrição do projeto
