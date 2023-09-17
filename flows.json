@@ -1,5 +1,71 @@
 [
     {
+        "id": "d086d30e577baa23",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "950cf281339638be",
+        "type": "serial in",
+        "z": "d086d30e577baa23",
+        "name": "",
+        "serial": "9e7b639eb9a21d2f",
+        "x": 210,
+        "y": 300,
+        "wires": [
+            [
+                "9bd70548d82462e1"
+            ]
+        ]
+    },
+    {
+        "id": "9bd70548d82462e1",
+        "type": "json",
+        "z": "d086d30e577baa23",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 430,
+        "y": 300,
+        "wires": [
+            [
+                "a31473493646b836"
+            ]
+        ]
+    },
+    {
+        "id": "a31473493646b836",
+        "type": "change",
+        "z": "d086d30e577baa23",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.contador",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 300,
+        "wires": [
+            [
+                "3669054f4ac0871c",
+                "f6d2019eab27bb8b"
+            ]
+        ]
+    },
+    {
         "id": "3669054f4ac0871c",
         "type": "ui_gauge",
         "z": "d086d30e577baa23",
@@ -26,6 +92,79 @@
         "x": 970,
         "y": 300,
         "wires": []
+    },
+    {
+        "id": "f6d2019eab27bb8b",
+        "type": "ui_chart",
+        "z": "d086d30e577baa23",
+        "name": "",
+        "group": "edf41cc55cdcca2e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Gráfico de Lotação",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "730bf6edfdc77ea0",
+        "type": "ui_spacer",
+        "z": "d086d30e577baa23",
+        "name": "spacer",
+        "group": "edf41cc55cdcca2e",
+        "order": 1,
+        "width": "1",
+        "height": "1"
+    },
+    {
+        "id": "9e7b639eb9a21d2f",
+        "type": "serial-port",
+        "serialport": "COM5",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
     },
     {
         "id": "edf41cc55cdcca2e",
